@@ -1,0 +1,12 @@
+步骤1：在 git1 文件夹里创建一个 test1.txt 文件，并在 test1.txt 文件中写入 111111
+
+步骤2：可以通过  cat 文件名.格式  查看文件内容，例如  cat test1.txt
+
+步骤3：通过  git add  把工作区的文件添加到暂存区(注意：暂存区不能存放空文件)
+        git add 文件名                                          添加某个文件到暂存区
+        git add *  或 git add . 或 git add --all        添加工作区所有文件到暂存区
+
+步骤4：输入git status可以查看状态。
+        注意：文件提交到暂存区，只是复制一份到暂存区，工作区还是有文件的。
+
+步骤5：git rm --cached 文件名 就把文件从暂存区删除了， 例子：git rm --cached test1.txt
